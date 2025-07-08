@@ -35,12 +35,15 @@
     <main class="main-content">
       <dialog class="dialog" id="dialog">
         <div class="dialog__content">
-          <svg width="39" height="39" aria-hidden="true">
+          <svg width="39" height="39">
             <use href="#floppy"></use>
           </svg>
           <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="dialog__button" onClick="window['dialog'].close()">
+        <button
+          class="button-base dialog__button"
+          onClick="window['dialog'].close()"
+        >
           <span class="button__text">OK</span>
         </button>
       </dialog>
@@ -52,8 +55,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-1"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Емае&gt;</p>
         </div>
@@ -98,7 +102,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -110,8 +114,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-2"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Получается&gt;</p>
         </div>
@@ -123,7 +128,7 @@
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
           </p>
-          <p class="card__content-text">Мальчик устал но движется дальше </p>
+          <p class="card__content-text">Мальчик устал но движется дальше</p>
           <div class="card__like-container">
             <button class="card__icon-button">
               <svg
@@ -158,7 +163,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -170,8 +175,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-3"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Треш&gt;</p>
         </div>
@@ -216,7 +222,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -228,8 +234,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-4"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Нормик&gt;</p>
         </div>
@@ -276,7 +283,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -288,8 +295,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-5"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Гуд&gt;</p>
         </div>
@@ -337,7 +345,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -349,8 +357,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-6"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Работаем&gt;</p>
         </div>
@@ -395,7 +404,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -407,8 +416,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-7"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;i'm dead&gt;</p>
         </div>
@@ -455,7 +465,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -467,8 +477,9 @@
         <div class="card__image-container">
           <img
             src="./images/image.png"
-            alt="Фритрек и нулевой спринт"
+            alt="Фото автора сайта"
             class="card__image image-filter-8"
+            loading="lazy"
           />
           <p class="card__image-label">&lt;Я устал&gt;</p>
         </div>
@@ -516,14 +527,17 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" aria-label="Нравится">
+            <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-      <button class="save-button" onClick="window['dialog'].showModal()">
-        <svg class="save-button__icon" viewBox="0 0 40 40" aria-hidden="true">
+      <button
+        class="button-base save-button"
+        onClick="window['dialog'].showModal()"
+      >
+        <svg class="save-button__icon" viewBox="0 0 40 40">
           <use href="#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
