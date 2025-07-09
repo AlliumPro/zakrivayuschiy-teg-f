@@ -140,6 +140,7 @@
 
 .card__image-container {
   position: relative;
+
 }
 
 .card__image-label {
@@ -153,6 +154,7 @@
   text-shadow: -1px 0 var(--stroke-color), 0 1px var(--stroke-color),
     1px 0 var(--stroke-color), 0 -1px var(--stroke-color);
   mix-blend-mode: hard-light;
+  text-transform: uppercase;
 }
 
 @supports ((-webkit-text-stroke: 1px var(--stroke-color)) or (text-stroke: 1px var(--stroke-color))) {
@@ -166,37 +168,39 @@
 
 .card__image {
   width: 100%;
+    border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-.image-filter-1 {
+.filter-sepia-warm {
   filter: sepia(90%) saturate(140%) hue-rotate(20deg);
 }
 
-.image-filter-2 {
+.filter-grayscale {
   filter: grayscale(90%);
 }
 
-.image-filter-3 {
+.filter-blur-bright {
   filter: blur(3px) brightness(110%);
 }
 
-.image-filter-4 {
+.filter-contrast-saturate {
   filter: contrast(120%) saturate(180%);
 }
 
-.image-filter-5 {
+.filter-bright-contrast {
   filter: brightness(130%) contrast(56%) saturate(133%);
 }
 
-.image-filter-6 {
+.filter-hue-rotate {
   filter: hue-rotate(75deg) saturate(140%);
 }
 
-.image-filter-7 {
+.filter-invert {
   filter: invert(100%);
 }
 
-.image-filter-8 {
+.filter-sepia-fade {
   filter: opacity(70%) sepia(45%);
 }
 
@@ -220,7 +224,7 @@
 .card__like-container {
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 8px;
 }
 
 .like-icon {
@@ -234,9 +238,6 @@
 }
 
 .card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 38px;
   height: 38px;
   border: 2px solid transparent;
