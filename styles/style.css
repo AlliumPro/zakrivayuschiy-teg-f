@@ -214,7 +214,6 @@
 .card__content-text {
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: "wght" var(--main-font-weight);
 }
 
 .button__text {
